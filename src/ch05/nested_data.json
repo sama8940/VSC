@@ -1,0 +1,15 @@
+{
+    "id": 1,
+    "name": "John",
+    "details": {
+        "age": 22,
+        "address": {
+            "city": "New York",
+            "zipcode": "10001"
+        },
+        "contacts": {
+            "email": "john@example.com",
+            "phone": "123-456-7890"
+        }
+    }
+}
