@@ -27,7 +27,7 @@ class GuiApp:
         menu = tkinter.Menu()
         menuFile = tkinter.Menu()
         menu.add_cascade(menu=menuFile, label= 'ファイル(F)', underline=5)
-        menuFile.add_command(label='終了', underline=3,
+        menuFile.add_command(label='終了(X)', underline=3,
             command=self.menuFileExit, accelerator='ALT+F4')
         menuHelp = tkinter.Menu()
         menu.add_cascade(menu=menuHelp, label='ヘルプ(H)', underline=4)
