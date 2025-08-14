@@ -8,6 +8,7 @@ ZEN_ALPHABET = 'ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕ�
 
 class TextFilter:
     def __init__(self, root:tkinter.Tk):
+        root.title(self.__class__.__name__)
         self.iniFilename = os.path.abspath(
             __file__).replace('.py', '.ini')
         clientX = '200'
@@ -110,7 +111,7 @@ class TextFilter:
 
     def menuSettingFontFamily(self):
         fd = FontDialog(root)
-        f = fd.fontselected
+        f = fd.fontSelected
         if f != '':
             self.text.config(font=(f, self.fontSize))
             global fontFamily
@@ -139,7 +140,6 @@ class TextFilter:
         s += '@2023 Hideo Harada\n'
         s += 'with Python ' + sys.version
         messagebox.showinfo(self.__class__.__name__, s)
-                     
 
 class FontDialog(simpledialog.Dialog):
     fontSelected = ''
