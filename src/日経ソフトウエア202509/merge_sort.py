@@ -32,12 +32,12 @@ def merge_sort(c):
         # 分割した箇所の後側の配列bに対して同じ処理を行う(再帰呼び出し)
         merge_sort(b)
         # 配列aと配列bを統合して配列cに格納する
-        mearge(a, b, c)
+        merge(a, b, c)
 
         print(f"a={a}とb={b}を統合して\nc={c}に格納しました。\n")
 
 # 配列aと配列bを統合して配列cに格納する関数
-def mearge(a, b, c):
+def merge(a, b, c):
     # 配列aと配列bの要素数を求める
     a_len = len(a)
     b_len = len(b)
