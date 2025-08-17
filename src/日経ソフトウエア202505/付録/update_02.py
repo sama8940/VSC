@@ -21,7 +21,7 @@ update_test(sql)
 # Column4も'Banana'に変更
 sql = """UPDATE Test
         SET Column2 = 150,
-          Column4 = 'Banana'
+        Column4 = 'Banana'
         WHERE Column1 = 4;"""
 update_test(sql)
 
@@ -29,4 +29,3 @@ for row in cur.execute("""SELECT * FROM Test;"""):
     print(row)
 
 conn.close()
-
