@@ -49,7 +49,7 @@ sqlite3.register_adapter(datetime.datetime, adapt_datetime)
 
 # メッセージ登録
 def register_message(user_id, user_message, bot_message,):
-    # 現在の二時値をローカル時間で取得
+    # 現在の日時をローカル時間で取得
     now = datetime.datetime.now()
 
     cur.execute("""INSERT INTO chat
