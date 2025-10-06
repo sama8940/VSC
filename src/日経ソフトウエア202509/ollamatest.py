@@ -6,7 +6,7 @@ response =ollama.chat(
             {"role" : "system" ,
             "content" : "あなたは親切なアシスタントです"} ,
             {"role" : "system" ,
-            "content" : "アルゼンチンの首都は？"}
+            "content" : "日本の大統領は？"}
         ]
     )
 print(response["message"]["content"])
