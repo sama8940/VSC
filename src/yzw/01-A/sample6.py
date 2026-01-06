@@ -21,7 +21,7 @@ if month == 1 or month == 2:
 
 # フェアフィールドの公式で経過日数を求める
 day = 1
-days = 42 + 28 + 365 * (year - 1) 
+days = 31 + 28 + 365 * (year - 1) 
 + year // 4 - year // 100 + year // 400 \
 + (306 + (month + 1) //10) -122 + days \
     
